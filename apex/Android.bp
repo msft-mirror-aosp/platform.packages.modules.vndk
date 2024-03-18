@@ -25,17 +25,6 @@ apex_defaults {
     updatable: false,
 }
 
-apex_vndk {
-    name: "com.android.vndk.current",
-    defaults: ["vndk-apex-defaults"],
-}
-
-override_apex {
-    name: "com.android.vndk.current.on_vendor",
-    base: "com.android.vndk.current",
-    vendor: true,
-}
-
 apex_key {
     name: "com.android.vndk.key",
     public_key: "com.android.vndk.pubkey",
